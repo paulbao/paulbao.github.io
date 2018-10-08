@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Native Swift as Part of React Native"
 date:   2018-10-05 11:42:07 +1100
 categories: mobile development
@@ -92,3 +93,27 @@ This [official document](http://facebook.github.io/react-native/docs/integration
 
 
 It takes me a bit of time to initialise `VenueListController` as the tableView that bind with Main storyboard is always nil and this is the only way to make it work.
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = 'https://paulbao.github.io/mobile/development/2018/10/05/native-swift-as-part-of-React-Native.html';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'native-swift-as-part-of-React-Native'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://baoenhui.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
